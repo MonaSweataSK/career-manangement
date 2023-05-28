@@ -1,0 +1,327 @@
+
+<!-- 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Deemed Universities</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/logo2.png" />
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style_college.css">
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+         
+         
+
+        .custom-spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+        .custom-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+        .custom-animate-fading-finite{animation:fading 2s}@keyframes fading{0%{opacity:0}50%{opacity:0.5}100%{opacity:1}}
+        .custom-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+        .custom-animate-top{animation:animatetop 1.5s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+        .custom-animate-left{animation:animateleft 1.5s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+        .custom-animate-right{position:relative;animation:animateright 1.5s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+        .custom-animate-bottom{position:relative;animation:animatebottom 1.5s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+        .custom-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+        .custom-animate-input{transition:width 0.4s ease-in-out}.custom-animate-input:focus{width:100%!important}
+        .custom-opacity,.custom-hover-opacity:hover{opacity:0.60}.custom-opacity-off,.custom-hover-opacity-off:hover{opacity:1}
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="main custom-animate-top">
+                <div class="main-left custom-animate-top">
+                        <img src="images/logo1.jpg" float="left">
+                </div>
+                <div class="main-right custom-animate-top" style="right: 0px;">
+                    <ul style="padding-top: 1%;">
+                        <li><a href="Contact.html"> Contact Us </a></li>
+                        <li><a href="courses.html"> Courses </a></li>
+                        <li><a href="financial_guides.html"> Financial Guide </a></li>
+                        <li><a href="Institutions_Universities.html"> Universities </a></li>
+                        <li><a href="career_options.html"> Career Options </a></li>
+                        <li><a href="home.html"> Home </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid" style="margin:0%;padding:0%">
+            <div class="row" style="margin:0%;padding:0%">
+                <div class="col-2">
+                    <div class="sidenav custom-animate-left" style="width:16.67%;">
+                        <div class="custom-animate-left">
+                            <a href="University_Search.html"> Search Universities </a>
+                            <a href="EntranceExams.html"> Entrance Exams </a>
+                            <a href="list_of_competetive_exams.html"> Competitive Exams </a>
+                            <a href="study_guides.html"> Study Guides </a>
+                            <a href="CollegeExpenses.html"> College Expenses </a>
+                            <a href="scholarship.html"> Scholarships </a>
+                            <a href="Campus_view.html"> Campus View </a>
+                            <a href="article.html"> Articles </a>
+                            <a href="coaching_centres.html"> Coaching Centers </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            
+
+        
+            <div class="row " style="margin:0%;padding:0%">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <hr class="custom-animate-zoom"color="#4fcb9f" style="height:5px"/>
+                     
+                     <center>
+                        <div style="align-content: center;margin-left:70px;" class="c_body" >
+                    
+                    
+                    <h1 style="font-weight: bold;">List of Deemed Universities</h1>
+                      <input class="c_input" type="text" placeholder="Search for Names...." id="myInput" onkeyup="myFunction()">
+                      
+                      <input class="c_input"  type="text" placeholder="Search for State...." id="myInput1" onkeyup="myFunction1()">
+                    <br><br>
+                      <table  id="myTable" class="myTable roundedCorners">
+                        <tr>
+                            
+                    <th>University</th>
+                    <th>State</th>
+                    <th>Location</th>
+                    <th>Esatablished</th>
+                    <th>Specialisation</th>
+                        </tr
+
+            
+
+                <tr>
+                    <td>Sri Sathya Sai Institute of Higher Learning</td>
+                    <td>Andhra Pradesh</td>
+                    <td>Anantapur</td>
+                    <td>1981</td>
+                    <td>MultiDisciplinary</td>
+                </tr>
+                <tr>
+                    <td>Nava Nalanda Mahavihara</td>
+                    <td>Bihar</td>
+                    <td>Nalanda</td>
+                    <td>1951</td>
+                    <td>Buddhist Studies</td>
+                </tr>
+                <tr>
+                    <td>Institute of Liver & Biliary Sciences</td>
+                    <td>Delhi</td>
+                    <td>New Delhi</td>
+                    <td>2009</td>
+                    <td>Medical Sciences</td>
+                </tr>
+                <tr>
+                    <td>Sumandeep Vidyapeeth</td>
+                    <td>Gujarat</td>
+                    <td>Waghodia</td>
+                    <td>1999</td>
+                    <td>Medical Sciences</td>
+                </tr>
+                <tr>
+                    <td>BLDE </td>
+                    <td>Karnataka</td>
+                    <td>Bijapur</td>
+                    <td>2008</td>
+                    <td>Medical Sciences</td>
+                </tr>
+                <tr>
+                    <td>Jain</td>
+                    <td>karnataka</td>
+                    <td>Bangalore</td>
+                    <td>1990</td>
+                    <td>Multidisciplinary</td>
+                </tr>
+                <tr>
+                    <td>NITTE</td>
+                    <td>karnataka</td>
+                    <td>Mangalore</td>
+                    <td>2008</td>
+                    <td>Medical Sciences </td>
+                </tr>
+                <tr>
+                    <td>Sri Balaji vidyapeeth</td>
+                    <td>Puducherry</td>
+                    <td>Pondicherry</td>
+                    <td>2001</td>
+                    <td>Medical Sciences</td>
+                </tr>
+                <tr>
+                    <td>IIS</td>
+                    <td>Rajasthan</td>
+                    <td>Jaipur</td>
+                    <td>1995</td>
+                    <td>Multidisciplinary</td>
+                </tr>
+                <tr>
+                    <td>Amrita Vishwa Vidyapeetham</td>
+                    <td>Coimbatore</td>
+                    <td>Tamil Nadu</td>
+                    <td>1994</td>
+                    <td>Multidisciplinary</td>
+                </tr>
+                <tr>
+                    <td>SRM Institute of Science & Technology</td>
+                    <td>Tamil Nadu</td>
+                    <td>Kanchipuram</td>
+                    <td>1985</td>
+                    <td>Technology</td>
+                </tr>
+                       
+                      </table>
+                    
+                     </div>
+                    </center>
+                    
+                    
+                    
+                    
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="footer-distributed custom-animate-bottom" style="padding-left: 0%;margin-left: 0%;">
+                <div class="footer-left">
+                    <img src="images/logo1.jpg">
+                    <p class="footer-company-name">© 2020. All rights reserved</p>
+                </div>
+                
+                <div class="footer-center1">
+                    <div>
+                    <i class="fa fa-map-marker"></i>
+                        <p>
+                            <span>
+                                No.123,Amritanagar,Ettimadai.
+                            </span>
+                        </p>
+                    </div>
+                
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@eduonix.com">support@gmail.com</a></p>
+                    </div>
+                </div>
+            
+                <div class="footer-center2">
+                    <p class="footer-links">
+                        <a href="home.html">Home</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="Contact.html">Contact</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="#">About</a>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                    <span>About us</span>
+                    In order to succeed in this mission, we work with over 3,750+ universities, 
+                    business schools, law schools, and pathway providers who are eager to diversify 
+                    their campuses and attract the right students from all over the world.
+                </div>
+            </footer>
+    
+        </div>
+   
+        <!-- All scripts -->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("custom-mySlides");
+              var dots = document.getElementsByClassName("custom-dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+             //js for filters
+             function myFunction() {
+              var input, filter, table, tr, td, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            function myFunction1() {
+              var input, filter, table, tr, td, i;
+              input = document.getElementById("myInput1");
+              filter = input.value.toUpperCase();
+              table = document.getElementById("myTable");
+              tr = table.getElementsByTagName("tr");
+              for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                  txtValue = td.textContent || td.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                  } else {
+                    tr[i].style.display = "none";
+                  }
+                }
+              }
+            }
+            //js close  for filters
+        </script>
+
+    </body>
+</html>

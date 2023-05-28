@@ -1,0 +1,428 @@
+
+
+
+<!-- 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Home </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/logo2.png" />
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+         
+            
+         .custom-slideshow-container1 {
+            height: 400px;
+            width: 100%;
+            position: relative;
+            margin:auto;
+            display:inline-block; 
+            z-index: 1;
+        }
+
+         .custom-mySlides1 {
+            height: 100%;
+            width: inherit;
+            display: none;
+            overflow: hidden;
+
+        }
+
+        .custom-card1{
+        width: inherit;
+        height: 100%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        /* margin: 2%; */
+        background-color:rgb(79, 203, 159,1);
+        padding:120px;
+        /* opacity: 0.8; */
+        /* rgb(79, 203, 159,0.3) */
+       }
+
+       .custom-home-button{
+     /* margin-top: 20px; */
+     margin-bottom: 10px;
+     background-color: (0,0,0,0.8);
+     border: 1px solid lightslategray;
+     border-radius: 5px;
+     padding:10px;
+     color: black;
+   }
+   .custom-home-button:hover{
+    /* rgb(25, 95, 148) */
+     background-color:rgb(79, 203, 159);
+
+     color: white;
+     transition: 0.75s;
+     cursor: pointer;
+   }
+   
+         
+
+        .custom-spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+        .custom-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+        .custom-animate-fading-finite{animation:fading 2s}@keyframes fading{0%{opacity:0}50%{opacity:0.5}100%{opacity:1}}
+        .custom-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+        .custom-animate-top{animation:animatetop 1.5s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+        .custom-animate-left{animation:animateleft 1.5s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+        .custom-animate-right{position:relative;animation:animateright 1.5s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+        .custom-animate-bottom{position:relative;animation:animatebottom 1.5s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+        .custom-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+        .custom-animate-input{transition:width 0.4s ease-in-out}.custom-animate-input:focus{width:100%!important}
+        .custom-opacity,.custom-hover-opacity:hover{opacity:0.60}.custom-opacity-off,.custom-hover-opacity-off:hover{opacity:1}
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="main custom-animate-top">
+                <div class="main-left custom-animate-top">
+                        <img src="images/logo1.jpg" float="left">
+                </div>
+                <div class="main-right custom-animate-top" style="right: 0px;">
+                    <ul style="padding-top: 1%;">
+                        <li><a href="Contact.html"> Contact Us </a></li>
+                        <li><a href="courses.html"> Courses </a></li>
+                        <li><a href="financial_guides.html"> Financial Guide </a></li>
+                        <li><a href="Institutions_Universities.html"> Universities </a></li>
+                        <li><a href="career_options.html"> Career Options </a></li>
+                        <li><a href="home.html"> Home </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid" style="margin:0%;padding:0%">
+            <div class="row" style="margin:0%;padding:0%">
+                <div class="col-2">
+                    <div class="sidenav custom-animate-left" style="width:16.67%;">
+                        <div class="custom-animate-left">
+                            <a href="University_Search.html"> Search Universities </a>
+                            <a href="EntranceExams.html"> Entrance Exams </a>
+                            <a href="list_of_competetive_exams.html"> Competitive Exams </a>
+                            <a href="study_guides.html"> Study Guides </a>
+                            <a href="CollegeExpenses.html"> College Expenses </a>
+                            <a href="scholarship.html"> Scholarships </a>
+                            <a href="Campus_view.html"> Campus View </a>
+                            <a href="article.html"> Articles </a>
+                            <a href="coaching_centres.html"> Coaching Centers </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10" style="margin:0%;padding:0%">
+                    <div class="custom-animate-right" style="padding-top:75px">
+                        <div class="custom-slideshow-container" >
+                
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">1 / 3</div>
+                            <img src="images/career4.jpg"   style="width:inherit;height: inherit;" >
+                            <div class="custom-text" style="color: black;"> Choose the right career for you </div>
+                            </div>
+                        
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">2 / 3</div>
+                            <img src="images/book1.jpeg" style="width:inherit;height: inherit;">
+                            <div class="custom-text"> Learn for exams with our study guides </div>
+                            </div>
+                        
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">3 / 3</div>
+                            <img src="images/university4.jpg" style="width:inherit;height: inherit;">
+                            <div class="custom-text"> Research about universities </div>
+                            </div>
+                        
+                            <a class="custom-prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="custom-next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                     
+                        <div style="text-align:center">
+                            <span class="custom-dot" onclick="currentSlide(1)"></span>
+                            <span class="custom-dot" onclick="currentSlide(2)"></span>
+                            <span class="custom-dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                
+            
+
+        
+            <div class="row " style="margin:0%;padding:0%">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <hr class="custom-animate-zoom"color="#4fcb9f" style="height:5px"/>
+                    <marquee>* Welcome to Winterfell *</marquee>
+                    <div class="area custom-animate-right">
+                        <h1>FINISHED GRADUATION?</h1>
+                        <img src="images/graduate.jpg" alt="graduate">
+                        <p>Every year, we change the lives of millions of students. We enable them to explore all their study options in one place and to find the best fit study programme that matches their needs, goals, and preferences. In order to succeed in this mission, we work with over 3,750+ universities, business schools, law schools, and pathway providers who are eager to diversify their campuses and attract the right students from all over the world.</p>
+                    </div>
+                    
+                    <div class="custom-cards-parent custom-animate-right" >
+                        <h1 style="text-align: center;"> Explore our Services </h1>
+                        <div class="custom-card">
+                            <div class="image">
+                                <img src="images/career2.jpg">
+                            </div>
+                            <div class="des">
+                                <h1> See Career Options </h1>
+                                <p> Choose a career that suits you! </p>
+                                <a href="career_options.html"><button>Read More...</button></a>
+                            </div>
+                        </div>
+                        <div class="custom-card">
+                            <div class="image">
+                                <img src="images/book3.jpg">
+                            </div>
+                            <div class="des">
+                                <h1> Entrance Exams </h1>
+                                <p> Pursuing Higher Studies? </p>
+                                <a href="EntranceExams.html"><button>Read More...</button></a>
+                            </div>
+                        </div>
+                        <div class="custom-card">
+                            <div class="image">
+                                <img src="images/book2.jpeg">
+                            </div>
+                            <div class="des">
+                                <h1> Competitive Exams </h1>
+                                <p> Exams needed for different jobs </p>
+                                <a href="list_of_competetive_exams.html"><button>Read More...</button></a>
+                            </div>
+                        </div>
+                        <div class="custom-card">
+                            <div class="image">
+                                <img src="images/New-Update.jpg">
+                            </div>
+                            <div class="des">
+                                <h1> Articles </h1>
+                                <p> Latest news and articles </p>
+                                <a href="article.html"><button>Read More...</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <br>
+
+
+                    <div class="custom-cards-parent custom-animate-right">
+                        <div class="row" style="padding-left:50px">
+                            <h1> Study at some of the World's Top Universities </h1>
+                            <div style="padding-left:30px">
+                                <a href="Institutions_Universities.html"><button class="custom-home-button"> Know More...</button></a>
+                            </div>
+                        </div>
+                        
+                        <div class="custom-card">
+                            <div class="image">
+                                <img src="images/harvard.jpg">
+                            </div>
+                            <div class="des">
+                                <h1> Harvard University</h1>
+                                <p> Among Top 10 Worldwide </p>
+                            </div>
+                        </div>
+                        <div class="custom-card">
+                            <div class="image">
+                                <img src="images/OXFORD_UNIVERSITY.jpg">
+                            </div>
+                            <div class="des">
+                                <h1> Oxford University</h1>
+                                <p> Among Top 10 Worldwide </p>
+                            </div>
+                        </div>
+                        <div class="custom-card">
+                            <div class="image">
+                                <img src="images/iitmadras.jpeg">
+                            </div>
+                            <div class="des">
+                                <h1> IIT Madras </h1>
+                                <p> Among Top 10 India </p>
+                            </div>
+                        </div>
+                        <div class="custom-card">
+                            <div class="image">
+                                <img src="images/IISc.jpg">
+                            </div>
+                            <div class="des">
+                                <h1> IISc Bangalore </h1>
+                                <p> Among Top 10 India </p>
+                            </div>
+                        </div>
+                    </div>
+            
+
+                    <div class="custom-animate-bottom" style="padding-top:75px">
+                        <h1 style="text-align: center;">Hear it from students!</h1>
+                        <div class="custom-slideshow-container1" >
+                            <div class="custom-mySlides1 custom-fade">
+                                <div class="custom-card1">
+                                    <div class="des">
+                                        <p style="font-size: 64px;"> "Best site for students!" </p>
+                                        <h1 style="font-size: 32px;text-align: right;"> ------------Vejay </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-mySlides1 custom-fade">
+                                <div class="custom-card1">
+                                    <div class="des">
+                                        <p style="font-size: 64px;"> "Really useful for the students" </p>
+                                        <h1 style="font-size: 32px;text-align: right;"> ------------Vishal </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-mySlides1 custom-fade">
+                                <div class="custom-card1">
+                                    <div class="des">
+                                        <p style="font-size: 64px;"> "Provides helpful guidance" </p>
+                                        <h1 style="font-size: 32px;text-align: right;"> ------------Mona </h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="custom-prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="custom-next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                        
+                        <div style="text-align:center">
+                            <span class="custom-dot1" onclick="currentSlide(1)"></span>
+                            <span class="custom-dot1" onclick="currentSlide(2)"></span>
+                            <span class="custom-dot1" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="footer-distributed custom-animate-bottom" style="padding-left: 0%;margin-left: 0%;">
+                <div class="footer-left">
+                    <img src="images/logo1.jpg">
+                    <p class="footer-company-name">© 2020. All rights reserved</p>
+                </div>
+                
+                <div class="footer-center1">
+                    <div>
+                    <i class="fa fa-map-marker"></i>
+                        <p>
+                            <span>
+                                No.123,Amritanagar,Ettimadai.
+                            </span>
+                        </p>
+                    </div>
+                
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@eduonix.com">support@gmail.com</a></p>
+                    </div>
+                </div>
+            
+                <div class="footer-center2">
+                    <p class="footer-links">
+                        <a href="home.html">Home</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="Contact.html">Contact</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="#">About</a>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                    <span>About us</span>
+                    In order to succeed in this mission, we work with over 3,750+ universities, 
+                    business schools, law schools, and pathway providers who are eager to diversify 
+                    their campuses and attract the right students from all over the world.
+                </div>
+            </footer>
+    
+        </div>
+   
+        <!-- All scripts -->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("custom-mySlides");
+              var dots = document.getElementsByClassName("custom-dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+
+
+            var slideIndex1 = 0;
+            showSlides1();
+            
+            function showSlides1() {
+              var i;
+              var slides1 = document.getElementsByClassName("custom-mySlides1");
+              var dots1 = document.getElementsByClassName("custom-dot1");
+              for (i = 0; i < slides1.length; i++) {
+                slides1[i].style.display = "none";  
+              }
+              slideIndex1++;
+              if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
+              for (i = 0; i < dots1.length; i++) {
+                dots1[i].className = dots1[i].className.replace(" active", "");
+              }
+              slides1[slideIndex1-1].style.display = "block";  
+              dots1[slideIndex1-1].className += " active";
+              setTimeout(showSlides1, 3000); // Change image every 3 seconds
+            }
+        </script>
+
+    </body>
+</html>
+
+

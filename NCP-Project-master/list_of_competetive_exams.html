@@ -1,0 +1,406 @@
+
+
+
+<!-- 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> List of Competetive Exams </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/logo2.png" />
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+         
+            
+            
+           /* Table */
+           table {
+            width:100%;
+            border-collapse:unset;
+            border:solid black 2px;
+            border-radius:10px;
+            -moz-border-radius:6px;
+            }
+            th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid black;
+            border-collapse: separate;
+            }
+            
+            tr:nth-child(even) {
+            background-color: #eee;
+            }
+            tr:nth-child(odd) {
+            background-color: #fff;
+            }
+            tr:hover{
+                background-color: rgb(79, 203, 159);
+                transition: 0.3s;
+            }
+            th {
+            background-color: black;
+            color: white;
+            }
+            table {
+                border-collapse:unset;
+                border:solid black 2px;
+                border-radius:10px;
+                /* -moz-border-radius:6px; */
+            }
+
+
+
+
+
+
+
+
+
+
+
+        .custom-spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+        .custom-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+        .custom-animate-fading-finite{animation:fading 2s}@keyframes fading{0%{opacity:0}50%{opacity:0.5}100%{opacity:1}}
+        .custom-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+        .custom-animate-top{animation:animatetop 1.5s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+        .custom-animate-left{animation:animateleft 1.5s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+        .custom-animate-right{position:relative;animation:animateright 1.5s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+        .custom-animate-bottom{position:relative;animation:animatebottom 1.5s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+        .custom-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+        .custom-animate-input{transition:width 0.4s ease-in-out}.custom-animate-input:focus{width:100%!important}
+        .custom-opacity,.custom-hover-opacity:hover{opacity:0.60}.custom-opacity-off,.custom-hover-opacity-off:hover{opacity:1}
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="main custom-animate-top">
+                <div class="main-left custom-animate-top">
+                        <img src="images/logo1.jpg" float="left">
+                </div>
+                <div class="main-right custom-animate-top" style="right: 0px;">
+                    <ul style="padding-top: 1%;">
+                        <li><a href="Contact.html"> Contact Us </a></li>
+                        <li><a href="courses.html"> Courses </a></li>
+                        <li><a href="financial_guides.html"> Financial Guide </a></li>
+                        <li><a href="Institutions_Universities.html"> Universities </a></li>
+                        <li><a href="career_options.html"> Career Options </a></li>
+                        <li><a href="home.html"> Home </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid" style="margin:0%;padding:0%">
+            <div class="row" style="margin:0%;padding:0%">
+                <div class="col-2">
+                    <div class="sidenav custom-animate-left" style="width:16.67%;">
+                        <div class="custom-animate-left">
+                            <a href="University_Search.html"> Search Universities </a>
+                            <a href="EntranceExams.html"> Entrance Exams </a>
+                            <a href="list_of_competetive_exams.html"> Competitive Exams </a>
+                            <a href="study_guides.html"> Study Guides </a>
+                            <a href="CollegeExpenses.html"> College Expenses </a>
+                            <a href="scholarship.html"> Scholarships </a>
+                            <a href="Campus_view.html"> Campus View </a>
+                            <a href="article.html"> Articles </a>
+                            <a href="coaching_centres.html"> Coaching Centers </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10" style="margin:0%;padding:0%">
+                    <div class="custom-animate-right" style="padding-top:75px">
+                        <div class="custom-slideshow-container" >
+                
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">1 / 3</div>
+                            <img src="images/career4.jpg"   style="width:inherit;height: inherit;" >
+                            <div class="custom-text" style="color: black;"> Choose the right career for you </div>
+                            </div>
+                        
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">2 / 3</div>
+                            <img src="images/book1.jpeg" style="width:inherit;height: inherit;">
+                            <div class="custom-text"> Learn for exams with our study guides </div>
+                            </div>
+                        
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">3 / 3</div>
+                            <img src="images/university4.jpg" style="width:inherit;height: inherit;">
+                            <div class="custom-text"> Research about universities </div>
+                            </div>
+                        
+                            <a class="custom-prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="custom-next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                     
+                        <div style="text-align:center">
+                            <span class="custom-dot" onclick="currentSlide(1)"></span>
+                            <span class="custom-dot" onclick="currentSlide(2)"></span>
+                            <span class="custom-dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                
+            
+
+        
+            <div class="row " style="margin:0%;padding:0%">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <hr class="custom-animate-zoom"color="#4fcb9f" style="height:5px"/>
+                    <div style="padding: 0px 0px 0px 30px">
+                        <input type="text" placeholder="Search for an Exam..." class="search-box-input" id="search_input">
+                        <button type="submit" value="search" name="Search" class="search-box-button" id="search_button"> Search </button>
+                    </div>
+                    <br>
+                    <p style="text-align:center;font-size: 32px;" class="custom-animate-zoom"> <b>List of Competetive Exams</b></p>
+                    <table class="custom-animate-zoom" style="table-layout: auto;border: black 5px solid">
+                        <thead style="border: black 5px solid">
+                            <th> S.No </th>
+                            <th> Exam Name </th>
+                            <th> Conducting Authority </th>
+                        </thead>
+                        <tbod>
+                            <tr>  
+                                <td>1</td>
+                                <td>Civil Services Exam</td>
+                                <td>Union Public Service Commission (UPSC)</td>
+                            </tr>
+                            <tr>  
+                                <td>2</td>
+                                <td>SSC CGL</td>
+                                <td>Staff Selection Commission (SSC)</td>
+                            </tr>
+                            <tr>  
+                                <td>3</td>
+                                <td>SBI PO</td>
+                                <td>State Bank of India</td>
+                            </tr>
+                            <tr>  
+                                <td>4</td>
+                                <td>IBPS PO</td>
+                                <td>Institute of Banking Personnel Selection</td>
+                            </tr>
+                            <tr>  
+                                <td>5</td>
+                                <td>SSC CHSL</td>
+                                <td>Staff Selection Commission (SSC)</td>
+                            </tr>
+                            <tr>  
+                                <td>6</td>
+                                <td>UPSC NDA</td>
+                                <td>Union Public Service Commission</td>
+                            </tr>
+                            <tr>  
+                                <td>7</td>
+                                <td>SBI Clerk</td>
+                                <td>State Bank of India</td>
+                            </tr>
+                            <tr>  
+                                <td>8</td>
+                                <td>IBPS Clerk</td>
+                                <td>Institute of Banking Personnel Selection</td>
+                            </tr>
+                            <tr>  
+                                <td>9</td>
+                                <td>UPSC CDS</td>
+                                <td>Union Public Service Commission</td>
+                            </tr>
+                            <tr>  
+                                <td>10</td>
+                                <td>IBPS RRB</td>
+                                <td>Institute of Banking Personnel Selection</td>
+                            </tr>
+                            <tr>  
+                                <td>11</td>
+                                <td>RBI Assistant</td>
+                                <td>Reserve Bank of India</td>
+                            </tr>
+                            <tr>  
+                                <td>12</td>
+                                <td>IBPS SO</td>
+                                <td>Institute of Banking Personnel Selection</td>
+                            </tr>
+            
+                        </tbody>
+                    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!--         https://www.getmyuni.com/exams/articles/list-of-competitive-exams-in-india
+       Civil Services Exam	Union Public Service Commission (UPSC)
+       SSC CGL	Staff Selection Commission (SSC)
+       SBI PO	State Bank of India
+       IBPS PO	Institute of Banking Personnel Selection
+       SSC CHSL	Staff Selection Commission (SSC)
+       UPSC NDA	Union Public Service Commission
+       SBI Clerk	State Bank of India
+       IBPS Clerk	Institute of Banking Personnel Selection
+       UPSC CDS	Union Public Service Commission
+       IBPS RRB	Institute of Banking Personnel Selection
+       RBI Assistant	Reserve Bank of India
+       SBI PO	State Bank of India
+       IBPS SO	Institute of Banking Personnel Selection
+       RBI Grade B officer	Reserve Bank of India
+       SSC GD	Staff Selection Commission (SSC)
+       SSC Stenographer	Staff Selection Commission (SSC)
+       CTET	Central Board of Secondary Education (CBSE)
+       SSC CPO	Staff Selection Commission (SSC)
+       SSC JE	Staff Selection Commission (SSC)
+       SSC JHT	Staff Selection Commission (SSC)
+       SSC MTS	Staff Selection Commission (SSC)
+       SSC Scientific Assistant	Staff Selection Commission (SSC)
+       RRB ALP	Railway Recruitment Control Board (RRB)
+       RRB JE	Railway Recruitment Control Board (RRB)
+       RRB NTPC	Railway Recruitment Control Board (RRB)
+       RRB Group D	Railway Recruitment Control Board (RRB)
+       DRDO	Defense Research and Development Organization (DRDO)
+       ISRO Recruitment	ISRO Centralized Recruitment Board
+       ESIC	Employees State Insurance Corporation (ESIC)
+       FCI Recruitment	Staff Selection Commission (SSC)
+       LIC AAO	Life Insurance Corporation of India (LIC)
+       LIC ADO	Life Insurance Corporation of India (LIC) -->
+
+
+
+                   
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+            <footer class="footer-distributed custom-animate-bottom" style="padding-left: 0%;margin-left: 0%;">
+                <div class="footer-left">
+                    <img src="images/logo1.jpg">
+                    <p class="footer-company-name">© 2020. All rights reserved</p>
+                </div>
+                
+                <div class="footer-center1">
+                    <div>
+                    <i class="fa fa-map-marker"></i>
+                        <p>
+                            <span>
+                                No.123,Amritanagar,Ettimadai.
+                            </span>
+                        </p>
+                    </div>
+                
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@eduonix.com">support@gmail.com</a></p>
+                    </div>
+                </div>
+            
+                <div class="footer-center2">
+                    <p class="footer-links">
+                        <a href="home.html">Home</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="Contact.html">Contact</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="#">About</a>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                    <span>About us</span>
+                    In order to succeed in this mission, we work with over 3,750+ universities, 
+                    business schools, law schools, and pathway providers who are eager to diversify 
+                    their campuses and attract the right students from all over the world.
+                </div>
+            </footer>
+    
+        </div>
+   
+        <!-- All scripts -->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("custom-mySlides");
+              var dots = document.getElementsByClassName("custom-dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+
+            var searchInput=document.getElementById("search_input");
+            var search_validation = function()
+            { 
+                var letters = /^[A-Za-z]+$/;
+                if(searchInput.value.match(letters))
+                {
+                alert('Search currently under progress...');
+                return true;
+                }
+                else
+                {
+                alert('Please input alphabet characters only!');
+                return false;
+                }
+            }
+            search_button.onclick=search_validation;
+        </script>
+
+    </body>
+</html>
+
+

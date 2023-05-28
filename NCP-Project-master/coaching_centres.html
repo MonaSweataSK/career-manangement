@@ -1,0 +1,356 @@
+
+
+
+<!-- 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Coaching Centres </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/logo2.png" />
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+         
+         
+
+        .custom-spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+        .custom-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+        .custom-animate-fading-finite{animation:fading 2s}@keyframes fading{0%{opacity:0}50%{opacity:0.5}100%{opacity:1}}
+        .custom-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+        .custom-animate-top{animation:animatetop 1.5s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+        .custom-animate-left{animation:animateleft 1.5s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+        .custom-animate-right{position:relative;animation:animateright 1.5s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+        .custom-animate-bottom{position:relative;animation:animatebottom 1.5s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+        .custom-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+        .custom-animate-input{transition:width 0.4s ease-in-out}.custom-animate-input:focus{width:100%!important}
+        .custom-opacity,.custom-hover-opacity:hover{opacity:0.60}.custom-opacity-off,.custom-hover-opacity-off:hover{opacity:1}
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="main custom-animate-top">
+                <div class="main-left custom-animate-top">
+                        <img src="images/logo1.jpg" float="left">
+                </div>
+                <div class="main-right custom-animate-top" style="right: 0px;">
+                    <ul style="padding-top: 1%;">
+                        <li><a href="Contact.html"> Contact Us </a></li>
+                        <li><a href="courses.html"> Courses </a></li>
+                        <li><a href="financial_guides.html"> Financial Guide </a></li>
+                        <li><a href="Institutions_Universities.html"> Universities </a></li>
+                        <li><a href="career_options.html"> Career Options </a></li>
+                        <li><a href="home.html"> Home </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid" style="margin:0%;padding:0%">
+            <div class="row" style="margin:0%;padding:0%">
+                <div class="col-2">
+                    <div class="sidenav custom-animate-left" style="width:16.67%;">
+                        <div class="custom-animate-left">
+                            <a href="University_Search.html"> Search Universities </a>
+                            <a href="EntranceExams.html"> Entrance Exams </a>
+                            <a href="list_of_competetive_exams.html"> Competitive Exams </a>
+                            <a href="study_guides.html"> Study Guides </a>
+                            <a href="CollegeExpenses.html"> College Expenses </a>
+                            <a href="scholarship.html"> Scholarships </a>
+                            <a href="Campus_view.html"> Campus View </a>
+                            <a href="article.html"> Articles </a>
+                            <a href="coaching_centres.html"> Coaching Centers </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10" style="margin:0%;padding:0%">
+                    <div class="custom-animate-right" style="padding-top:75px">
+                        <!-- Slideshow container -->
+                        <div class="custom-slideshow-container" >
+                
+                            <!-- Full-width images with number and caption text -->
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">1 / 3</div>
+                            <img src="images/career4.jpg"   style="width:inherit;height: inherit;" >
+                            <div class="custom-text" style="color: black;"> Choose the right career for you </div>
+                            </div>
+                        
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">2 / 3</div>
+                            <img src="images/book1.jpeg" style="width:inherit;height: inherit;">
+                            <div class="custom-text"> Learn for exams with our study guides </div>
+                            </div>
+                        
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">3 / 3</div>
+                            <img src="images/university4.jpg" style="width:inherit;height: inherit;">
+                            <div class="custom-text"> Research about universities </div>
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="custom-prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="custom-next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                     
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="custom-dot" onclick="currentSlide(1)"></span>
+                            <span class="custom-dot" onclick="currentSlide(2)"></span>
+                            <span class="custom-dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                
+            
+
+        
+            <div class="row" style="margin:0%;padding:0%">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                            <div style="padding: 0px 0px 0px 30px">
+                                    <input type="text"  placeholder="Search Centres" class="search-box-input" id="myFilter" onkeyup="myCards()">
+                                </div>
+                      
+                    </div>
+                  </div>
+           
+                
+        
+            <div class="container" id="myItems">
+                
+
+                  
+        
+                    <div class="row" style="margin:0%;padding:0%">
+                            <div class="col-2"></div>
+                            <div class="col-10" id="MyItems">
+                                    <div class="container" >
+                    
+                            <div class="card img-fluid" style="width:400px; margin-left:40%">
+                              <img class="card-img-top" src="images/gre.jpg" alt="Card image" style="width:100%; height:250px;">
+                              <div class="card-footer">
+                                <h4 class="card-title" style="color:rgb(0, 0, 0);">GRE Coaching Centres</h4>
+                                <a href="success.html" class="btn btn-primary">See Centres</a>
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                        </div>
+                    
+                    <div class="col-2"></div>
+                        <div class="col-10" >
+                                <div class="container">
+                                <div class="card img-fluid" style="width:400px; margin-left:40%">
+                                  <img class="card-img-top" src="images/gmat.png" alt="Card image" style="width:100%; height:250px;" >
+                                  <div class="card-footer">
+                                    <h4 class="card-title" style="color:rgb(0, 0, 0);">GMAT Coaching Centres</h4>
+                                    <a href="success.html" class="btn btn-primary">See Centres</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                            </div>
+                        </div>
+                        <div class="row" style="margin:0%;padding:0%">
+                                <div class="col-2"></div>
+                                <div class="col-10">
+                                        <div class="container" >
+                        
+                                <div class="card img-fluid" style="width:400px; margin-left:40%">
+                                  <img class="card-img-top" src="images/upsc.png" alt="Card image" style="width:100%; height:250px;">
+                                  <div class="card-footer">
+                                    <h4 class="card-title" style="color:rgb(0, 0, 0);">UPSC Coaching Centres</h4>
+                                    <a href="success.html" class="btn btn-primary">See Centres</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                            </div>
+                        
+                        <div class="col-2"></div>
+                            <div class="col-10">
+                                    <div class="container">
+                                    <div class="card img-fluid" style="width:400px; margin-left:40%">
+                                      <img class="card-img-top" src="images/ssc.jpg" alt="Card image" style="width:100%; height:250px;" >
+                                      <div class="card-footer">
+                                        <h4 class="card-title" style="color:rgb(0, 0, 0);">SSC Coaching Centres</h4>
+                                        <a href="success.html" class="btn btn-primary">See Centres</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <br>
+                                </div>
+                                
+
+                                <div class="col-2"></div>
+                            <div class="col-10">
+                                    <div class="container">
+                                    <div class="card img-fluid" style="width:400px; margin-left:40%">
+                                      <img class="card-img-top" src="images/LSAT.jpg" alt="Card image" style="width:100%; height:250px;" >
+                                      <div class="card-footer">
+                                        <h4 class="card-title" style="color:rgb(0, 0, 0);">LSAT Coaching Centres</h4>
+                                        <a href="success.html" class="btn btn-primary">See Centres</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        
+                            </div>
+                            <br>
+         
+                            <div class="row" style="margin:0%;padding:0%">
+                            <div class="col-2"></div>
+                            <div class="col-10">
+                                    <div class="container">
+                                    <div class="card img-fluid" style="width:400px; margin-left:40%">
+                                      <img class="card-img-top" src="images/gate.jpg" alt="Card image" style="width:100%; height:250px;" >
+                                      <div class="card-footer">
+                                        <h4 class="card-title" style="color:rgb(0, 0, 0);">GATE Coaching Centres</h4>
+                                        <a href="success.html" class="btn btn-primary">See Centres</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+            </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+            <footer class="footer-distributed custom-animate-bottom" style="padding-left: 0%;margin-left: 0%;">
+                <div class="footer-left">
+                    <img src="images/logo1.jpg">
+                    <p class="footer-company-name">© 2020. All rights reserved</p>
+                </div>
+                
+                <div class="footer-center1">
+                    <div>
+                    <i class="fa fa-map-marker"></i>
+                        <p>
+                            <span>
+                                No.123,Amritanagar,Ettimadai.
+                            </span>
+                        </p>
+                    </div>
+                
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@eduonix.com">support@gmail.com</a></p>
+                    </div>
+                </div>
+            
+                <div class="footer-center2">
+                    <p class="footer-links">
+                        <a href="home.html">Home</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="Contact.html">Contact</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="#">About</a>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                    <span>About us</span>
+                    In order to succeed in this mission, we work with over 3,750+ universities, 
+                    business schools, law schools, and pathway providers who are eager to diversify 
+                    their campuses and attract the right students from all over the world.
+                </div>
+            </footer>
+    
+        </div>
+   
+        <!-- All scripts -->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("custom-mySlides");
+              var dots = document.getElementsByClassName("custom-dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+
+            function myCards() {
+                var input, filter, cards, cardContainer, h4, title, i;
+                input = document.getElementById("myFilter");
+                var letters = /^[A-Za-z]+$/;
+                inputval=input.value;
+                if(inputval.match(letters) || inputval=="")
+                {
+
+                }
+                else
+                {
+                    alert("Input must contain only letters");
+                }
+                filter = input.value.toUpperCase();
+
+                cardContainer = document.getElementById("myItems");
+                console.log("cardcontain :"+cardContainer)
+                cards = cardContainer.getElementsByClassName("container");
+                console.log("cards :"+cards.length)
+                for (i = 0; i < cards.length; i++) {
+                    title = cards[i].querySelector("h4.card-title");
+                    if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+                        cards[i].style.display = "";
+                    } else {
+                        cards[i].style.display = "none";
+                    }
+                }
+            
+            }
+        </script>
+
+    </body>
+</html>
+
+

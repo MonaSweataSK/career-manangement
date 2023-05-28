@@ -1,0 +1,494 @@
+
+
+
+<!-- 
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%> -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Base </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/logo2.png" />
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <style>
+         
+         
+
+        .custom-spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+        .custom-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+        .custom-animate-fading-finite{animation:fading 2s}@keyframes fading{0%{opacity:0}50%{opacity:0.5}100%{opacity:1}}
+        .custom-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+        .custom-animate-top{animation:animatetop 1.5s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+        .custom-animate-left{animation:animateleft 1.5s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+        .custom-animate-right{position:relative;animation:animateright 1.5s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+        .custom-animate-bottom{position:relative;animation:animatebottom 1.5s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+        .custom-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+        .custom-animate-input{transition:width 0.4s ease-in-out}.custom-animate-input:focus{width:100%!important}
+        .custom-opacity,.custom-hover-opacity:hover{opacity:0.60}.custom-opacity-off,.custom-hover-opacity-off:hover{opacity:1}
+         
+        body{
+    font-family: DejaVu Sans Mono, monospace;
+}
+h1,h2,h3,h4,h4,h5{
+    font-weight: bold;
+   
+}
+h1{
+    text-shadow: 2px 2px 5px #2e856e;
+}
+.faq{
+  font-weight: bold;
+}
+        table {
+            width:100%;
+            }
+            table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            }
+            th, td {
+            padding: 15px;
+            text-align: left;
+            }
+            tr,td:hover{
+                background-color: #e0ac1c;
+                transition: 1s;
+            }
+            tr:nth-child(even) {
+            background-color: #eee;
+            }
+            tr:nth-child(odd) {
+            background-color: #fff;
+            }
+            th {
+            background-color: black;
+            color: white;
+            }
+            /*animation for head*/
+            .col-10 h1{
+             
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+/*colllapsible*/
+
+.collapsible {
+ 
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: lightgray;
+  font-weight: normal;
+}
+.video{
+  margin-left: 50px;
+  padding-left: 50px;
+}
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="main custom-animate-top">
+                <div class="main-left custom-animate-top">
+                        <img src="images/logo1.jpg" float="left">
+                </div>
+                <div class="main-right custom-animate-top" style="right: 0px;">
+                    <ul style="padding-top: 1%;">
+                        <li><a href="Contact.html"> Contact Us </a></li>
+                        <li><a href="courses.html"> Courses </a></li>
+                        <li><a href="financial_guides.html"> Financial Guide </a></li>
+                        <li><a href="Institutions_Universities.html"> Universities </a></li>
+                        <li><a href="career_options.html"> Career Options </a></li>
+                        <li><a href="home.html"> Home </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid" style="margin:0%;padding:0%">
+            <div class="row" style="margin:0%;padding:0%">
+                <div class="col-2">
+                    <div class="sidenav custom-animate-left" style="width:16.67%;">
+                        <div class="custom-animate-left">
+                            <a href="University_Search.html"> Search Universities </a>
+                            <a href="EntranceExams.html"> Entrance Exams </a>
+                            <a href="list_of_competetive_exams.html"> Competitive Exams </a>
+                            <a href="study_guides.html"> Study Guides </a>
+                            <a href="CollegeExpenses.html"> College Expenses </a>
+                            <a href="scholarship.html"> Scholarships </a>
+                            <a href="Campus_view.html"> Campus View </a>
+                            <a href="article.html"> Articles </a>
+                            <a href="coaching_centres.html"> Coaching Centers </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10" style="margin:0%;padding:0%">
+                    <div class="custom-animate-right" style="padding-top:75px">
+                        <!-- Slideshow container -->
+                        <div class="custom-slideshow-container" >
+                
+                            <!-- Full-width images with number and caption text -->
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">1 / 3</div>
+                            <img src="images/career4.jpg"   style="width:inherit;height: inherit;" >
+                            <div class="custom-text" style="color: black;"> Choose the right career for you </div>
+                            </div>
+                        
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">2 / 3</div>
+                            <img src="images/book1.jpeg" style="width:inherit;height: inherit;">
+                            <div class="custom-text"> Learn for exams with our study guides </div>
+                            </div>
+                        
+                            <div class="custom-mySlides custom-fade">
+                            <div class="custom-numbertext">3 / 3</div>
+                            <img src="images/university4.jpg" style="width:inherit;height: inherit;">
+                            <div class="custom-text"> Research about universities </div>
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="custom-prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="custom-next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                        <br>
+                     
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="custom-dot" onclick="currentSlide(1)"></span>
+                            <span class="custom-dot" onclick="currentSlide(2)"></span>
+                            <span class="custom-dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                
+            
+
+        
+            <div class="row " style="margin:0%;padding:0%">
+                <div class="col-2"></div>
+                <div class="col-10">
+                    <hr class="custom-animate-zoom"color="#4fcb9f" style="height:5px"/>
+                    
+                     <h1>SCOLARSHIPS TO FINANCE YOUR EDUCATION!&#128218;</h1>
+                     <h5>Our Goal To Compile Information And Resources That Students Often Search For When Studying Abroad</h5>
+                     <img src="images/scholarship.jpg" style="width: 100%;">
+                     <p>Want to do masters and Ph.D. courses? but the financial problems and fees become a barrier to complete your higher education dream? 
+                         Are you Looking Some scholarships for Postgraduate Students In India?</p>
+                         <br>
+                     <p>Then you're on the right page. Here we have listed some important and upcoming PG Scholarships for Ph.D. Students.
+                          Help those who wish to pursue master courses but due to the financial obstacle, they did not take admission.</p>    
+                      
+ <table>
+     <tr>
+       <th>Scholarship Name</th>
+       <th>Eigibility</th>
+     </tr>
+     <tr>
+       <td>CSIP Research Fellowship 2020</td>
+       <td>Undergraduate & Postgraduate degree holder</td>
+       
+     </tr>
+     <tr>
+       <td>National Institute of Fashion Technology (NIFT) SARTHAK Financial Assistance Scheme 2020</td>
+       <td>Undergraduate & Postgraduate degree holder</td>
+       
+     </tr>
+     <tr>
+       <td>The Dalai Lama Trust Postgraduate Scholarship 2020</td>
+       <td>Postgraduates applicant</td>
+       
+     </tr>
+     <tr>
+       <td>MIT Manipal Department of Physics Project Fellowship 2020</td>
+       <td>Postgraduate students</td>
+       
+     </tr>
+     <tr>
+       <td>Panjab University Junior Research Fellowship 2020</td>
+       <td>Post Graduate Students</td>
+       
+     </tr>
+     <tr>
+       <td>IITM Research Fellowship</td>
+       <td>Post Graduate Students</td>
+      
+     </tr>
+     <tr>
+         <td>UGC National Fellowship for Scheduled Caste Students (NFSC)</td>
+         <td>Post Graduate Students</td>
+        
+     </tr>
+     <tr>
+         <td>ICMR Centenary-Post Doctoral Research Fellowship Scheme</td>
+         <td>Post Graduate Candidate</td>
+        
+     </tr>
+     <tr>
+         <td>NSDL Shiksha Sahyog Scholarship for pg Students</td>
+         <td>Post Graduate Students</td>
+        
+       </tr>
+       <tr>
+         <td>Swarna Jayanti Fellowships Scheme</td>
+         <td>Ph.D Students</td>
+        
+       </tr>
+       <tr>
+         <td>Sitaram Jindal Scholarship Scheme For Postgraduate Students 2020</td>
+         <td>11th to PG Students</td>
+        
+       </tr>
+       <tr>
+         <td>NSDL Shiksha Sahyog Scholarship for pg Students </td>
+         <td>PG Candidates </td>
+        
+       </tr>
+       <tr>
+         <td>Orange Tulip Scholarship for PG Students</td>
+         <td>UG and PG Students</td>
+        
+       </tr>
+       <tr>
+         <td>Aga Khan Foundation International Scholarship/td>
+         <td>PG & PhD Students</td>
+        
+       </tr>
+       <tr>
+         <td>J N Tata Endowment Loan Scholarships 2020</td>
+         <td>Pursuing PG/Ph.D./Doctoral Studies</td>
+        
+       </tr>
+   </table>
+ 
+ 
+  <br>
+  <br>
+  <h2> SCHOLARSHIP AT IIT's!!</h2>
+  <h6>Check out this video!!</h6>
+  <video width="700" style="margin-left: 150px;"  controls>
+   <source src="video.mp4" type="video/mp4" >
+   
+   Your browser does not support HTML video.
+ </video>
+ <br>
+ <br>
+ <br>
+ 
+  <h2><center> FAQ'S</center></h2>
+  <div class="faq">
+ <button type="button" class="collapsible">Q1. Is the scheme open for all candidates enrolled in Indian Universities/ Colleges/ Institutes? </button>
+ <div class="content">
+   <p>No. Only those candidates who have domicile of the North- Eastern states of India are covered under the schemes i.e.Assam, Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland , Sikkim and Tripura.</p>
+ </div>
+ <button type="button" class="collapsible">Q2. Is there any annual income ceiling for candidates to be included under the scheme?  </button>
+ <div class="content">
+   <p>Yes, only those candidates whose annual family income is less than or equal to Rs.4.5 lakh per annum are covered under ambit of the scheme.
+ 
+   </p>
+ </div>  
+   <button type="button" class="collapsible">Q3. Is there any need for uploading of domicile certificate alongwith the online application form?  </button>
+   <div class="content">
+     <p>Yes, the domicile certificate/ permanent resident certificate issued by the competent authority will have to be uploaded with the online application form.
+   
+     </p>
+   </div>  
+   <button type="button" class="collapsible">Q4. Are students enrolled in private/deemed universities (not funded by either Central or State Government) eligible to apply?  </button>
+   <div class="content">
+       <p>No. The scheme is applicable for students of first year undergraduate courses and enrolled in the following institutions are eligible to apply : -
+ 
+         1. Universities/Institutions/Colleges included under Section 2(f) and 12 (B) of UGC Act.
+         2.Deemed to be Universities included under Section 3 of the UGC Act, 1956 and eligible to receive grants-in-aid from UGC.
+         3.Universities/Institutions/Colleges funded by Central / State Government.
+         4.Institutes of National Importance.
+         5.Institutions recognized by other statutory councils within as well as outside the States of NER.
+     
+      </p>
+   </div>
+   <button type="button" class="collapsible">Q5. Are the students who have enrolled in some course in distance mode or have obtained admission through management quota be considered el igible for award of scholarship?  </button>
+   <div class="content">
+        <p>No these categories of students will not be considered for award of scholarship.
+         </p>
+   </div>  
+   <button type="button" class="collapsible">Q6. Are students enrolled in dual degree courses eligible to apply?  </button>
+   <div class="content">
+        <p>Yes, only those candidates whose annual family income is less than or equal to Rs.4.5 lakh per annum are covered under ambit of the scheme.
+      
+        </p>
+   </div> 
+   
+   <button type="button" class="collapsible">Q7. Will the scholarship be renewed if the awardee fails in the first or subsequent years of study?  </button>
+   <div class="content">
+        <p>No. The scholarship will not be renewed if the awardee fails to qualify in the annual or term end examinations of the course
+      
+        </p>
+   </div>  
+   <button type="button" class="collapsible">Q8. Will the scholarship transferred in case the awardee changes the institution or course during the tenure of scholarship? </button>
+   <div class="content">
+        <p>No. There is no provision for transfer of scholarship.
+      
+        </p>
+   </div> 
+   <button type="button" class="collapsible">Q9. Do I need to provide a transcript for my scholarship application?  </button>
+   <div class="content">
+        <p>If you are applying for postgraduate scholarships and your most recent year of study was at the University of Otago, you do not need to provide a transcript. If your most recent year of study was at another University you will need to provide a transcript. This will be uploaded by you during your application to your programme, which will then be included in your scholarship application.
+      
+        </p>
+   </div> 
+   <button type="button" class="collapsible">Q10. What should I upload for research evidence and supporting evidence on a postgraduate scholarship application?  </button>
+   <div class="content">
+        <p>Research Evidence is where you load information outside of your academic transcript that demonstrates your research experience. In most cases this will be the front page of a publication or conference presentation.
+ 
+         Supporting Evidence is where you load information if you would like to request special consideration if you have grades that you do not wish to have included in your grade assessment, or you have a reason for lower than expected grades. In most cases this happens due to ill health or bereavement, and the documents uploaded provides evidence of this.
+      
+        </p>
+   </div>    
+  </div> 
+      
+      
+       
+ 
+ 
+ <script>
+     var coll = document.getElementsByClassName("collapsible");
+     var i;
+     
+     for (i = 0; i < coll.length; i++) {
+       coll[i].addEventListener("click", function() {
+         this.classList.toggle("active");
+         var content = this.nextElementSibling;
+         if (content.style.display === "block") {
+           content.style.display = "none";
+         } else {
+           content.style.display = "block";
+         }
+       });
+     }
+     </script>
+     
+   
+                 </div>
+             </div>
+         </div>
+ 
+ 
+
+
+            <footer class="footer-distributed custom-animate-bottom" style="padding-left: 0%;margin-left: 0%;">
+                <div class="footer-left">
+                    <img src="images/logo1.jpg">
+                    <p class="footer-company-name">© 2020. All rights reserved</p>
+                </div>
+                
+                <div class="footer-center1">
+                    <div>
+                    <i class="fa fa-map-marker"></i>
+                        <p>
+                            <span>
+                                No.123,Amritanagar,Ettimadai.
+                            </span>
+                        </p>
+                    </div>
+                
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@eduonix.com">support@gmail.com</a></p>
+                    </div>
+                </div>
+            
+                <div class="footer-center2">
+                    <p class="footer-links">
+                        <a href="home.html">Home</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="Contact.html">Contact</a>
+                    </p>
+                    </br>
+                    </br>
+                    <p>
+                        <a href="#">About</a>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                    <span>About us</span>
+                    In order to succeed in this mission, we work with over 3,750+ universities, 
+                    business schools, law schools, and pathway providers who are eager to diversify 
+                    their campuses and attract the right students from all over the world.
+                </div>
+            </footer>
+    
+        </div>
+   
+        <!-- All scripts -->
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("custom-mySlides");
+              var dots = document.getElementsByClassName("custom-dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+        </script>
+
+    </body>
+</html>
+
+
